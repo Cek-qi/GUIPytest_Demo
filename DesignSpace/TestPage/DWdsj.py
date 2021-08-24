@@ -30,10 +30,7 @@ class DW(FindElement):
     def Yjs(self):
         time.sleep(2)
         '''点击多维大数据'''
-        #self.public_WaitElementClass(self.dwdsj)[0].click()
-        self.session.find_element_by_xpath(self.dwdsj).click()
-    def yjs(self):
-        time.sleep(2)
+        self.public_WaitElementClass(self.dwdsj)[0].click()
         '''点击打开一键搜页面'''
         self.public_WaitElementClass(self.YiJianSou)[0].click()
 

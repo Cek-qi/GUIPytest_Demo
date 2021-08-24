@@ -58,9 +58,7 @@ def test_login(DeviceUrl, UserName, Password):
 @pytest.mark.parametrize("ID",gd.getData('ID'))
 def test_search(ID):
     '''人员搜索'''
-    web.find_element_by_xpath('//*[@id="kiafLayout"]/div[1]/div[1]/div/div/div[2]/div[3]/div[1]').click()
-    #dw.Yjs()     # 打开一键搜菜单
-    dw.yjs()
+    dw.Yjs()     # 打开一键搜菜单
     time.sleep(3)
     dw.yjs_search(ID)
     time.sleep(10)
