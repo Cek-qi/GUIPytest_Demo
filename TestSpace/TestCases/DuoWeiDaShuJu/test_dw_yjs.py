@@ -1,6 +1,8 @@
 # coding=utf-8
 # 新建模板流程
 # ========必选========
+import logging
+
 import pytest
 import time
 from DesignSpace.TestFunction.public.public_debug import *
@@ -33,6 +35,8 @@ def test_login(DeviceUrl, UserName, Password):
     '''打开视综页面并登陆'''
     logging.info("loggining")
     login.urlJump(DeviceUrl)
+    time.sleep(2)
+    login.click_continue()
     time.sleep(10)
     login.input_userName(UserName)
     login.input_passWord(Password)
@@ -48,11 +52,15 @@ def test_login(DeviceUrl, UserName, Password):
     logging.info('切换业务屏')
     time.sleep(1)
     Text = web.find_element_by_xpath('//*[@id="kiafLayout"]/div[1]/div[1]/div/div/div[3]/div[2]/div/span').text
+    logging.info(Text)
     assert Text == '地图屏'
+
 @pytest.mark.parametrize("ID",gd.getData('ID'))
 def test_search(ID):
     '''人员搜索'''
-    dw.Yjs()     # 打开一键搜菜单
+    web.find_element_by_xpath('//*[@id="kiafLayout"]/div[1]/div[1]/div/div/div[2]/div[3]/div[1]').click()
+    #dw.Yjs()     # 打开一键搜菜单
+    dw.yjs()
     time.sleep(3)
     dw.yjs_search(ID)
     time.sleep(10)
@@ -75,6 +83,4 @@ def test_search_car(carID):
 
 
 if __name__ == "__main__":
-    pytest.main(['-q',
-                 '--junit-xml=ResultSpace/report/test.xml',
-                 '--html=ResultSpace/report/test.html','test_dw_yjs.py'])
+    pytest.main(['-q','test_dw_yjs.py'])

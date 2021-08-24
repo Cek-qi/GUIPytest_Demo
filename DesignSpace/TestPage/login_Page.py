@@ -12,6 +12,7 @@ class loginPage(FindElement):
     Username = '//*[@id="app"]/div/div[2]/div[2]/form/div[1]/div/div[1]/input'
     Password = '//*[@id="app"]/div/div[2]/div[2]/form/div[2]/div/div[1]/input'
     LoginButton = '//*[@id="keybtn"]/span'
+    continued = '/html/body/div[1]/div/div[2]/div/div[1]/span[2]/a'
 
 
     def __init__(self,session):
@@ -33,6 +34,10 @@ class loginPage(FindElement):
     def urlJump(self, url):
         '''url跳转'''
         self.session.get(url)
+
+    def click_continue(self):
+        '''忽略'''
+        self.public_WaitElementXpath(self.continued)[0].click()
 
     def urlEffect(self):
         try:
