@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite errors="0" failures="2" hostname="DESKTOP-R00QOGK" name="pytest" skipped="0" tests="3" time="32.767" timestamp="2021-08-23T15:08:31.482120"><testcase classname="TestSpace.TestCases.test_dw" file="TestSpace\TestCases\test_dw.py" line="20" name="test_web" time="5.619"></testcase><testcase classname="TestSpace.TestCases.test_dw" file="TestSpace\TestCases\test_dw.py" line="30" name="test_login[https://dolphin-dev.kedacom.com/ezview-pra/#/-praAdmin-kedacom2021#]" time="16.915"><failure message="IndexError: list index out of range">DeviceUrl = &apos;https://dolphin-dev.kedacom.com/ezview-pra/#/&apos;
+UserName = &apos;praAdmin&apos;, Password = &apos;kedacom2021#&apos;
+
+    @pytest.mark.parametrize(&quot;DeviceUrl,UserName,Password&quot;,gd.getData(&quot;DeviceUrl&quot;, &quot;UserName&quot;, &quot;Password&quot;))
+    def test_login(DeviceUrl, UserName, Password):
+        &apos;&apos;&apos;打开视综页面并登陆&apos;&apos;&apos;
+        logging.info(&quot;loggining&quot;)
+        login.urlJump(DeviceUrl)
+        time.sleep(10)
+&gt;       login.input_userName(UserName)
+
+test_dw.py:37: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;DesignSpace.TestPage.login_Page.loginPage object at 0x0000017E4684D040&gt;
+name = &apos;praAdmin&apos;
+
+    def input_userName(self, name):
+        &apos;&apos;&apos;输入用户名&apos;&apos;&apos;
+&gt;       self.public_WaitElementXpath(self.Username)[0].send_keys(name)
+E       IndexError: list index out of range
+
+..\..\DesignSpace\TestPage\login_Page.py:23: IndexError</failure></testcase><testcase classname="TestSpace.TestCases.test_dw" file="TestSpace\TestCases\test_dw.py" line="51" name="test_search[320324198402150975]" time="7.134"><failure message="IndexError: list index out of range">ID = &apos;320324198402150975&apos;
+
+    @pytest.mark.parametrize(&quot;ID&quot;,gd.getData(&apos;ID&apos;))
+    def test_search(ID):
+        &apos;&apos;&apos;人员搜索&apos;&apos;&apos;
+&gt;       dw.Yjs()     # 打开一键搜菜单
+
+test_dw.py:55: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;DesignSpace.TestPage.DWdsj.DW object at 0x0000017E4684D160&gt;
+
+    def Yjs(self):
+        time.sleep(2)
+        &apos;&apos;&apos;点击多维大数据&apos;&apos;&apos;
+&gt;       self.public_WaitElementXpath(self.dwdsj)[0].click()
+E       IndexError: list index out of range
+
+..\..\DesignSpace\TestPage\DWdsj.py:32: IndexError</failure></testcase><testcase time="0.001"></testcase></testsuite></testsuites>

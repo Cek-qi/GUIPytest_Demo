@@ -1,0 +1,5 @@
+INFO     root:test_allure.py:36 loggining
+INFO     root:test_allure.py:42 login
+INFO     root:public_urlcheck.py:9 当前URL:https://dolphin-dev.kedacom.com/ezview-pra/#/
+INFO     root:test_allure.py:49 https://dolphin-dev.kedacom.com/ezview-pra/#/media/fuseVideo
+INFO     root:test_allure.py:50 切换业务屏

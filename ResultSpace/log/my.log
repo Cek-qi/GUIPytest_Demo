@@ -1,0 +1,19 @@
+2021-08-23 15:08:30,271 public_GetDatas.py INFO {'DeviceUrl': ['https://dolphin-dev.kedacom.com/ezview-pra/#/'], 'UserName': ['praAdmin'], 'Password': ['kedacom2021#'], 'ID': ['320324198402150975'], 'carID': ['苏E88888'], 'NAME': ['刘彬']}
+2021-08-23 15:08:30,271 public_GetDatas.py INFO 1
+2021-08-23 15:08:30,271 public_GetDatas.py INFO [['https://dolphin-dev.kedacom.com/ezview-pra/#/', 'praAdmin', 'kedacom2021#']]
+2021-08-23 15:08:30,271 public_GetDatas.py INFO 1
+2021-08-23 15:08:30,271 public_GetDatas.py INFO [['320324198402150975']]
+2021-08-23 15:08:30,271 public_GetDatas.py INFO 1
+2021-08-23 15:08:30,271 public_GetDatas.py INFO [['苏E88888']]
+2021-08-23 15:08:31,500 public_GetDatas.py INFO {'DeviceUrl': ['https://dolphin-dev.kedacom.com/ezview-pra/#/'], 'UserName': ['praAdmin'], 'Password': ['kedacom2021#'], 'ID': ['320324198402150975'], 'carID': ['苏E88888'], 'NAME': ['刘彬']}
+2021-08-23 15:08:31,500 public_GetDatas.py INFO 1
+2021-08-23 15:08:31,500 public_GetDatas.py INFO [['https://dolphin-dev.kedacom.com/ezview-pra/#/', 'praAdmin', 'kedacom2021#']]
+2021-08-23 15:08:31,501 public_GetDatas.py INFO 1
+2021-08-23 15:08:31,501 public_GetDatas.py INFO [['320324198402150975']]
+2021-08-23 15:08:31,501 public_GetDatas.py INFO 1
+2021-08-23 15:08:31,501 public_GetDatas.py INFO [['苏E88888']]
+2021-08-23 15:08:34,970 test_dw.py INFO 打开浏览器
+2021-08-23 15:08:37,127 test_dw.py INFO loggining
+2021-08-23 15:09:06,296 connectionpool.py WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017E4682EE20>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。')': /session/92fb6356cd54964b547f0322fb6f4e57
+2021-08-23 15:09:08,319 connectionpool.py WARNING Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017E479D1AC0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。')': /session/92fb6356cd54964b547f0322fb6f4e57
+2021-08-23 15:09:10,374 connectionpool.py WARNING Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017E479D1A00>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。')': /session/92fb6356cd54964b547f0322fb6f4e57

@@ -1,0 +1,5 @@
+INFO     root:test_dw.py:34 loggining
+INFO     root:test_dw.py:40 login
+INFO     root:public_urlcheck.py:9 当前URL:https://dolphin-dev.kedacom.com/ezview-pra/#/media/fuseVideo
+INFO     root:test_dw.py:47 https://dolphin-dev.kedacom.com/ezview-pra/#/media/fuseVideo
+INFO     root:test_dw.py:48 切换业务屏
